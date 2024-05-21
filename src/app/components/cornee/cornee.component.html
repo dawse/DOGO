@@ -1,0 +1,61 @@
+<div class="hero_area">
+    
+      
+  <div class="card">
+    <div class="card-body">
+      <h1>Cornée</h1>
+      
+      <ng-container *ngIf="currentPage === 1">
+        <p>
+          La cornée (Cornea) constitue la partie antérieure, transparente et avasculaire de la tunique fibreuse du bulbe. Elle est plus convexe que la sclère et de forme presque ronde chez le chien, représente la partie la plus antérieure de la tunique fibreuse (Figure 23) (Dulaurent, 2006 ; Dyce et al., 2010).
+        </p>
+        <img src="/assets/images/c6.PNG" alt="Anatomy of the Eye">
+    </ng-container>
+    <ng-container *ngIf="currentPage === 2">
+      <p>
+        La cornée se trouve exposée aux rayons lumineux et assure, de par sa transparence, le rôle de premier dioptre dans la formation de l’image lumineuse (Roger, 2011). Elle est également résistante, capable d‟affronter les traumatismes liés à son exposition. Son épaisseur est plus fine en partie centrale qu‟en périphérie (Martin, 2010). La cornée est enchâssée dans la sclère à la manière d'un verre de montre, au niveau d'une zone annulaire de transition nommée limbe de la cornée. Elle est plus convexe que la sclère et son centre, qualifié de vertex de la cornée, correspond au pôle antérieur du globe oculaire (Barone, 2010). Chez les petits animaux domestiques, comme le Chat et le Lapin, la cornée représente 25 à 30% de la surface totale du bulbe oculaire contre 7 à 10% seulement chez l'Homme. Son épaisseur varie entre 0,5 et 1 mm chez le Chat et entre 1,5 et 2 mm chez le Bœuf (Barone, 2010). L‟épaisseur de la cornée varie selon les espèces, les régions de la cornée et l'âge (Labelle, 2017).
+      </p>
+      <p>
+        En avant, la sclère fusionne avec la cornée périphérique et la conjonctive bulbaire pour former une zone de transition(le limbe). Le limbe est une zone de transition très importante et constitue l’entrée chirurgicale dans la chambre antérieure. À ce point, la sclérotique est pigmentée à des degrés divers, et l'épithélium sus-jacent est plus épais, avec des cellules pigmentaires. La couche de Bowman à l'extérieur et la membrane de Descemet se terminent à l’intérieur de cette zone.
+      </p>
+
+      <p>La face antérieure de la cornée est convexe et humidifiée par le film lacrymal précornéen, tandis que la face postérieure est concave et baignée par l'humeur aqueuse contenue dans la chambre antérieure du bulbe. Vue de l'extérieur, la périphérie de la face antérieure est presque circulaire chez les Carnivores comme chez l'Homme, tandis que chez les Ongulés elle est ovalaire avec un pôle médial obtus et un pôle latéral rétréci (Barone, 2010). La transparence de la cornée résulte de l'absence de kératinisation de son épithélium antérieur, de celle de pigments et de vaisseaux dans son épaisseur, de la disposition bien organisée des fibres dans sa substance propre, de la perméabilité sélective des épithéliums antérieur et postérieur, et du drainage continu de son liquide interstitiel à travers l'épithélium postérieur (Barone, 2010 ; Dubielzig et al., 2010)</p>
+      <p>C'est pourquoi des lésions cornéennes et des perturbations du mécanisme métabolique de transport aqueux (p. ex. après la mort) provoquent une accumulation d'eau dans la substance propre, dont résultent un œdème et une opacification de la cornée.</p>
+      <img src="/assets/images/c7.PNG" alt="Anatomy of the Eye">
+    </ng-container>
+
+
+  
+
+      <button class="button" (click)="redirectToEye()">
+          <div class="button-box">
+            <span class="button-elem">
+              <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                ></path>
+              </svg>
+            </span>
+            <span class="button-elem">
+              <svg viewBox="0 0 46 40">
+                <path
+                  d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </button>
+
+         <!-- Pagination Controls -->
+         <div class="pagination">
+          <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+          <span>Page {{currentPage}} of {{totalPages}}</span>
+          <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+      </div>
+      
+
+    
+    </div>
+  </div>
+</div>
+
