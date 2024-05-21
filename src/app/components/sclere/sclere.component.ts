@@ -18,7 +18,7 @@ export class SclereComponent {
   }
 
   redirectToEye(): void {
-    this.router.navigate(['/eye']);
+    this.router.navigate(['/']);
   }
 
   nextPage(): void {

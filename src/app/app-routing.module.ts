@@ -13,7 +13,7 @@ import { PaupiereComponent } from './components/paupiere/paupiere.component';
 import { CorneeComponent } from './components/cornee/cornee.component';
 
 const routes: Routes = [
-  { path: 'eye', component: EyeComponent },
+  { path: '', component: EyeComponent },
   {path:'iris', component:IrisComponent},
   {path:'cristallin',component:CristallinComponent},
   {path:'sclere', component:SclereComponent},

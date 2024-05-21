@@ -13,7 +13,7 @@ export class CorneeComponent {
   constructor(private router: Router) {}
 
   redirectToEye(): void {
-    this.router.navigate(['/eye']);
+    this.router.navigate(['/']);
   }
 
   nextPage(): void {
